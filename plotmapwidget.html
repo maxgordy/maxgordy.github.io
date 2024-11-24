@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Widget Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: powderblue;
+        }
+        /* Container for the content, using flexbox */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        /* Style for the left column (Widget now on the left) */
+        #interactive-widget {
+            width: 55%; /* Right column now takes up 50% */
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Set the height for the iframe */
+            border: none;
+        }
+        /* Style for the right column (Text now on the right) */
+        .text-column {
+            width: 45%; /* Text column takes up 45% of the width */
+            padding-left: 20px; /* Adds space between text and the widget */
+        }
+        /* Optional additional styling for headers */
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body style="background-color:powderblue;">
+    <div class="container">
+        <!-- Left column for the interactive widget -->
+        <div id="interactive-widget">
+            <iframe src="files/HtmlWidget/multiple-ggiraph-2.html" style="border:none;"></iframe>
+        </div>
+
+        <!-- Right column for text -->
+        <div class="text-column">
+            <header>
+                <h1>Reproducing Inequality: Exploring Exclusionary Zoning in Montgomery County, MD</h1>
+            </header>
+            <section id="additional-info" class="my-4">
+                <h2>Intersection of Zoning, Home Values, and Race</h2>
+                <p>This graphic shows the relationship between home values and the level of exclusionary zoning for all zip codes in Montgomery County.
+                    The color indicates the proportion of white residents relative to the county mean. 
+                </p>
+            </section>
+            <section id="additional-info" class="my-4">
+                <h2>Mapping Property Values</h2>
+                <p>This map displays median home values by zipcode in Montgomery County, with the most valuable properties concentrated around the northwest corner of Washington, DC (the bottom of the county map).
+                </p>
+            </section>
+            <section id="additional-info2" class="my-4">
+                <h2>Findings</h2>
+                <p>While Montgomery County's inclusionary zoning policies have been widely praised, 
+                    housing inequality has in the area has continued to rise. One of the reasons for this is
+                    widespread exclusionary zoning that has prevented the creation of housing. The cluster of zipcodes
+                    in the top right of the chart have very restrictive zoning, with over 75% of lots designated as single family. 
+                    The proximity of these areas to DC's urban center has exacerbated the impact of these restrictions,
+                    leading to skyrocketing housing prices, which are reflected in the area's high property values. 
+                    These visualizations were created as part of a larger analysis on Montgomery County that can be read 
+                    <a href="https://medium.com/@maxwgordy/the-reproduction-of-inequality-exclusionary-zoning-in-montgomery-county-md-c71fa7c9dfff">here</a>.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional: Include JavaScript libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
