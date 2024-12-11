@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Widget Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: powderblue;
+        }
+    </style>
     <!-- Link to any external stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <!-- Optionally add a framework like Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color:powderblue;">
     <!-- Main container for the webpage -->
     <div class="container my-4">
         <!-- Header -->
         <header>
-            <h1>Interactive Widget Showcase</h1>
+            <h1>NYU Dorm Monthly Noise Complaints 2010-2024</h1>
             <p>Explore the interactive visualizations below alongside explanatory text.</p>
         </header>
 
         <!-- Section for the widget -->
         <section id="interactive-widget" class="my-4">
-            <h2>Widget Title</h2>
-            <p>This interactive widget helps to visualize X data over time.</p>
+            <h2>NYU Dorm Noise Complaints 2010-2024</h2>
+            <p>This interactive chart helps to visualize the number of noise complaints within 250ft of an NYU residence hall over time.</p>
             <!-- Embed the interactive widget -->
             <iframe src="widgets/nyu_noise_widget/nyu-noise-v5calls_summary_month_plot.html" width="100%" height="600" style="border:none;"></iframe>
-        </section>
-
-        <!-- Section for additional information -->
-        <section id="additional-info" class="my-4">
-            <h2>Additional Information</h2>
-            <p>Provide more details, context, or instructions on how to use the widget here. You can also add links to related resources or datasets.</p>
         </section>
     </div>
 
